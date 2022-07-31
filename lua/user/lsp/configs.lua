@@ -5,7 +5,8 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { "jsonls", "sumneko_lua", "tsserver", "cssls", "html", "emmet_ls", "gopls", "tailwindcss" }
+local servers = { "jsonls", "sumneko_lua", "tsserver", "cssls", "html", "emmet_ls", "gopls", "tailwindcss", "pyright",
+  "pylsp" }
 
 lsp_installer.setup({
   ensure_installed = servers,
@@ -24,7 +25,7 @@ for _, server in pairs(servers) do
   end
 
   if server == "html" then
-    opts.filetypes = { 'lua','html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' }
+    opts.filetypes = { 'lua', 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' }
   end
 
   if server == "tailwindcss" then

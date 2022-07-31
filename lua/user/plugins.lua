@@ -84,6 +84,7 @@ use { "ellisonleao/gruvbox.nvim" }
 
   -- Transparent
   use("xiyaowong/nvim-transparent")
+  use("norcalli/nvim-colorizer.lua")
 
   -- cmp plugins
   use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin
@@ -104,6 +105,7 @@ use { "ellisonleao/gruvbox.nvim" }
 
   -- Telescope
   use({ "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" })
+
 
   -- Treesitter
   use({
